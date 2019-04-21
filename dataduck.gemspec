@@ -17,14 +17,14 @@ Gem::Specification.new do |spec|
   spec.bindir = "bin"
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.6"
+  spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.3"
 
   spec.add_runtime_dependency "dotenv", '~> 2.0'
-  spec.add_runtime_dependency "sequel", '~> 4.19'
-  spec.add_runtime_dependency "pg", '~> 0.16'
-  spec.add_runtime_dependency "mysql2", '~> 0.4'
+  spec.add_runtime_dependency "sequel"
+  spec.add_runtime_dependency "pg"
+  spec.add_runtime_dependency "mysql2"
   spec.add_runtime_dependency "aws-sdk", "~> 2.0"
   spec.add_runtime_dependency "typhoeus", "~> 0.8"
   spec.add_runtime_dependency "oj", "~> 2.12"

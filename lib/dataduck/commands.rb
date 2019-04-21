@@ -195,8 +195,8 @@ module DataDuck
       puts "This quickstart wizard will help you set up DataDuck."
 
       puts "What is your work email address?"
-      email = STDIN.gets.strip
-      self.quickstart_register_email(email)
+      #email = STDIN.gets.strip
+      #self.quickstart_register_email(email)
 
       puts "What kind of database would you like to source from?"
       db_type = prompt_choices([
@@ -251,11 +251,6 @@ module DataDuck
       end
 
       config_obj = {
-        'users' => {
-            email => {
-                'admin' => true
-            }
-        },
         'sources' => {
           'source1' => {
             'type' => db_type.to_s,
